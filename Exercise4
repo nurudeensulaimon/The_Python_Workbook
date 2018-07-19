@@ -1,0 +1,14 @@
+# compute the area  of a field, reporting the result in acres 
+
+SQRT_PER_ACRE = 43560
+
+# read input from user 
+length = float(input("Enter the length of the field in feet:"))
+width = float(input("Enter the width of the field in feet:"))
+
+# Compute the area in acres
+acres = length * width / SQRT_PER_ACRE 
+
+# DISPLAY THE RESULT 
+print ("The area of the field is",acres, "acres")
+
