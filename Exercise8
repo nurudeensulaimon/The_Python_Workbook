@@ -1,0 +1,14 @@
+WIDGET_WEIGH = 75 
+GIZMO_WEIGH = 112
+
+widget_unit = int(raw_input("Enter the units of widget here:"))
+gizmo_unit = int(raw_input("Enter the units of gizmo here:"))
+
+widget_total = WIDGET_WEIGH * widget_unit 
+gizmo_total = GIZMO_WEIGH * gizmo_unit 
+
+print("here is the widget total:", widget_total,"here is gizmo total", gizmo_total)
+
+
+ 
+
