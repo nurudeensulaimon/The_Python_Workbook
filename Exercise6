@@ -1,0 +1,45 @@
+cost_of_meal = float(raw_input("Enter the cost of meal here:"))
+local_taxrate = float(raw_input("Enter the local tax rate here:"))
+
+tip_for_meal = cost_of_meal * 0.18
+
+tax_calc = cost_of_meal  * local_taxrate
+total_meal_cost = cost_of_meal + tip_for_meal + tax_calc
+
+print("The total cost of the meal is:$",'$',total_meal_cost)
+
+
+# Text Book Solution 
+
+TAX_RATE = 0.05 
+TIP_RATE = 0.18
+
+# Read the cost of the meal from the user 
+cost = float(input("Enter the cost of the meal:"))
+
+# Compute the tax and the tip
+tax = cost * TAX_RATE 
+tip = cost * TIP_RATE 
+
+total = cost + tax + tip
+
+# Display the result 
+print("The tax is $%.2f and the tip is $%.2f, making the total $%.2f" %\
+	(tax,tip,total))
+
+
+beer_cost = float(raw_input("Enter the price of beer here:"))
+beer_amount = float(raw_input("Enter the unit of beer here:"))
+local_tax = float(raw_input("Enter the local tax rate here:"))
+
+
+server_tip = beer_cost * 0.15 
+
+beer_total = beer_cost * beer_amount 
+
+tax_rate = beer_total * local_tax
+
+total_bill = beer_total + server_tip + tax_rate 
+
+print ("the tip is $%.2f and your total beer cost is $%.2f,and your total bill is $%.2f") %\
+      (server_tip, beer_total, total_bill)
