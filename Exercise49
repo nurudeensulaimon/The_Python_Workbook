@@ -1,0 +1,23 @@
+# Richter Scale 
+Magnitude = float(input("Enter the magnitude here: "))
+
+if Magnitude  < 2.0:
+	descriptor = "Micro"
+elif Magnitude == 2.0 or Magnitude < 3.0:
+	descriptor ="Very minor"
+elif Magnitude == 3.0 or Magnitude < 4.0:
+	descriptor = "Minor"
+elif Magnitude == 4.0 or Magnitude < 5.0:
+	descriptor ="Light"
+elif Magnitude ==5.0 or Magnitude < 6.0:
+	descriptor ="Moderate"
+elif Magnitude ==6.0 or Magnitude < 7.0:
+	descriptor = "Strong"
+elif Magnitude ==7.0 or Magnitude < 8.0:
+	descriptor ="Major"
+elif Magnitude ==8.0 or Magnitude < 10.0:
+	descriptor ="Great"
+else:
+	descriptor ="Meteoric"
+
+print("The earth quake is:", descriptor)
