@@ -1,0 +1,28 @@
+# Report whether  an employee's performance is unacceptable, acceptable 
+# or meritorious based on the rating entered by the user 
+
+RAISE_FACTOR = 2400.00
+UNACCEPTABLE = 0
+ACCEPTABLE = 0.4
+MERITORIOUS = 0.6
+
+
+# Reading the rating from the user 
+rating =float(input("Enter the rating: "))
+
+# Classify the performance 
+if rating == UNACCEPTABLE:
+	performance="Unacceptable"
+elif rating == ACCEPTABLE:
+	performance = "Acceptable"
+elif rating >= MERITORIOUS:
+	performance="Meritorious"
+else:
+	performance=" "
+
+# Report the result 
+if performance =="":
+	print("That wasn't a valid rating.")
+else:
+	print("Based on that rating, the performance is %s."%performance)
+	print("You will receive a raise of $%.2f" %(rating * RAISE_FACTOR))
