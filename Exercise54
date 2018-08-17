@@ -1,0 +1,23 @@
+# Wavelengths of Visible Light 
+
+wave_length = int(input("Read the wavelength from users: "))
+
+if (wave_length == 380) or (wave_length < 450):
+	Color ="Violet"
+elif (wave_length == 450) or (wave_length < 495):
+	Color = "Blue"
+elif (wave_length == 495) or (wave_length < 570):
+	Color = "Green"
+elif (wave_length ==570) or (wave_length < 590):
+	Color = "Yellow"
+elif (wave_length == 590) or (wave_length < 620):
+	Color="Orange"
+elif (wave_length == 620) or (wave_length < 750):
+	Color="Red"
+else:
+	 wave_length = " "
+
+if wave_length == " ":
+	print("This is an error")
+else:
+	print("When the wavelength is:", wave_length,"The color is:",Color)
