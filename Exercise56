@@ -1,0 +1,30 @@
+
+# Cell Phone Bill
+# Base Charge 
+base_charge = 15
+emergency_call = 0.44 
+extra_text_cost = 0
+extra_talk_cost = 0
+
+text_count = int(input("Enter the text count here: "))
+
+talk_count = int(input("Enter the text count here: "))
+
+
+if text_count <= 50 and talk_count <= 50:
+	base_charge = base_charge
+elif text_count > 50:
+	extra_text_cost = (text_count - 50) * 0.25
+elif talk_count > 50:
+	extra_talk_cost = (talk_count - 50) * 0.15
+else:
+	pass 
+
+
+tax = (base_charge + extra_text_cost + extra_talk_cost + emergency_call) * 0.05
+total_bill = (base_charge + extra_text_cost + extra_talk_cost + emergency_call) 
+
+total_bill = total_bill + tax
+
+
+print("Your monthly bill is: $%.2f" % (total_bill))
